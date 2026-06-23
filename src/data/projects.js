@@ -1,0 +1,42 @@
+export const projects = [
+  {
+    id: "PRJ-01",
+    name: "ERP Finance Automation",
+    owner: "Aarav Mehta",
+    progress: 82,
+    status: "On Track",
+    budget: "$184K",
+  },
+  {
+    id: "PRJ-02",
+    name: "HR Self Service Portal",
+    owner: "Sophia Carter",
+    progress: 64,
+    status: "At Risk",
+    budget: "$96K",
+  },
+  {
+    id: "PRJ-03",
+    name: "Inventory Control Tower",
+    owner: "Ishaan Rao",
+    progress: 58,
+    status: "On Track",
+    budget: "$132K",
+  },
+  {
+    id: "PRJ-04",
+    name: "Sales Order Workflow",
+    owner: "Zara Khan",
+    progress: 74,
+    status: "On Track",
+    budget: "$118K",
+  },
+  {
+    id: "PRJ-05",
+    name: "Identity Governance Refresh",
+    owner: "Noah Bennett",
+    progress: 46,
+    status: "Needs Attention",
+    budget: "$76K",
+  },
+];

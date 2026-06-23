@@ -14,7 +14,7 @@ export const handlers = [
       const body = await request.json();
       console.log('Login request:', body);
       
-      if (presets[body.email] && body.password === 'enterprise') {
+      if (presets[body.email] && (body.password === 'enterprise' || body.password === 'password@123')) {
         console.log('Login successful, returning token');
         return HttpResponse.json(
           { 

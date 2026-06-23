@@ -23,7 +23,7 @@ const useAuthStore = create((set, get) => ({
       'employee@amdoxerp.com': { id: 'u-4', name: 'Maya Williams', role: 'employee', email: 'employee@amdoxerp.com' },
     };
 
-    if (presets[credentials.email] && credentials.password === 'enterprise') {
+    if (presets[credentials.email] && (credentials.password === 'enterprise' || credentials.password === 'password@123')) {
       const mockUser = presets[credentials.email];
       const mockToken = 'mock-token-' + Date.now();
       localStorage.setItem('token', mockToken);

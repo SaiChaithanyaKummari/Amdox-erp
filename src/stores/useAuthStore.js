@@ -15,10 +15,16 @@ const useAuthStore = create((set, get) => ({
     set({ token, isAuthenticated: !!token });
   },
   login: async (credentials) => {
-    // 1. Check default admin credentials
-    if (credentials.email === 'admin@amdoxerp.com' && 
-        credentials.password === 'enterprise') {
-      const mockUser = { id: 'u-1', name: 'Nadia Wilson', role: 'admin', email: 'admin@amdoxerp.com' };
+    // 1. Check default credentials for all roles
+    const presets = {
+      'admin@amdoxerp.com': { id: 'u-1', name: 'Nadia Wilson', role: 'admin', email: 'admin@amdoxerp.com' },
+      'hr@amdoxerp.com': { id: 'u-2', name: 'Michael Brown', role: 'hr', email: 'hr@amdoxerp.com' },
+      'manager@amdoxerp.com': { id: 'u-3', name: 'John Smith', role: 'manager', email: 'manager@amdoxerp.com' },
+      'employee@amdoxerp.com': { id: 'u-4', name: 'Maya Williams', role: 'employee', email: 'employee@amdoxerp.com' },
+    };
+
+    if (presets[credentials.email] && credentials.password === 'enterprise') {
+      const mockUser = presets[credentials.email];
       const mockToken = 'mock-token-' + Date.now();
       localStorage.setItem('token', mockToken);
       localStorage.setItem('user', JSON.stringify(mockUser));

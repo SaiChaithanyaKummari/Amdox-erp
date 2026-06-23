@@ -1,10 +1,10 @@
 import { http, HttpResponse } from 'msw';
 
-const sampleUser = {
-  id: 'u-1',
-  name: 'Nadia Wilson',
-  role: 'admin',
-  email: 'admin@amdoxerp.com',
+const presets = {
+  'admin@amdoxerp.com': { id: 'u-1', name: 'Nadia Wilson', role: 'admin', email: 'admin@amdoxerp.com' },
+  'hr@amdoxerp.com': { id: 'u-2', name: 'Michael Brown', role: 'hr', email: 'hr@amdoxerp.com' },
+  'manager@amdoxerp.com': { id: 'u-3', name: 'John Smith', role: 'manager', email: 'manager@amdoxerp.com' },
+  'employee@amdoxerp.com': { id: 'u-4', name: 'Maya Williams', role: 'employee', email: 'employee@amdoxerp.com' },
 };
 
 export const handlers = [
@@ -14,12 +14,12 @@ export const handlers = [
       const body = await request.json();
       console.log('Login request:', body);
       
-      if (body.email === 'admin@amdoxerp.com' && body.password === 'enterprise') {
+      if (presets[body.email] && body.password === 'enterprise') {
         console.log('Login successful, returning token');
         return HttpResponse.json(
           { 
-            token: 'mock-token-123', 
-            user: sampleUser 
+            token: 'mock-token-' + Date.now(), 
+            user: presets[body.email] 
           },
           { status: 200 }
         );

@@ -118,11 +118,8 @@ export default function Login() {
               <FiArrowRight className="h-4 w-4" />
             </button>
 
-            <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
-              Need an account?{' '}
-              <Link to="/register" className="font-bold text-primary hover:text-orange-600">
-                Register
-              </Link>
+            <p className="mt-6 text-center text-xs text-slate-400">
+              Public registration is disabled. Contact your administrator to register.
             </p>
           </form>
         </section>

@@ -22,6 +22,7 @@ export const roleConfigs = {
       { label: "Inventory", path: "/admin/inventory", icon: "inventory" },
       { label: "Projects", path: "/admin/projects", icon: "projects" },
       { label: "Tasks", path: "/admin/tasks", icon: "tasks" },
+      { label: "Register User", path: "/register", icon: "team" },
       { label: "Settings", path: "/admin/settings", icon: "settings" },
     ],
   },

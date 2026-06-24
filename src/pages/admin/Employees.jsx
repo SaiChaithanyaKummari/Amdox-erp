@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FiUsers, FiDownload, FiFilter, FiPlus, FiSearch, FiEdit, FiTrash2, FiMail, FiPhone, FiRefreshCw } from 'react-icons/fi';
 import PageHeader from '../../components/common/PageHeader.jsx';
 import AddEmployeeModal from '../../components/modals/AddEmployeeModal.jsx';
@@ -14,6 +15,7 @@ export default function Employees() {
   const [statusFilter, setStatusFilter] = useState('all');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const navigate = useNavigate();
   const currentUser = useAuthStore((state) => state.user);
   const userRole = currentUser?.role?.toLowerCase() || 'admin';
   const isHRorAdmin = userRole === 'hr' || userRole === 'admin';
@@ -131,6 +133,12 @@ export default function Employees() {
                 <FiRefreshCw className="h-4 w-4" />
                 Sync to DB
               </button>
+              {userRole === 'admin' && (
+                <button onClick={() => navigate('/register')} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-primary/40 hover:text-primary dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200">
+                  <FiPlus className="h-4 w-4" />
+                  Register User
+                </button>
+              )}
               <button onClick={handleAddEmployee} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600">
                 <FiPlus className="h-4 w-4" />
                 Add Employee

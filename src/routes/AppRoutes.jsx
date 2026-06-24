@@ -96,7 +96,7 @@ export default function AppRoutes() {
         <Routes>
           <Route path="/" element={<Navigate to="/admin/dashboard" replace />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/register" element={<PrivateRoute allowedRoles={["admin"]}><Register /></PrivateRoute>} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
 
           <Route path="/admin" element={<PrivateRoute><AdminLayout /></PrivateRoute>}>

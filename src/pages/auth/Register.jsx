@@ -69,8 +69,8 @@ export default function Register() {
         console.warn('Backend registration failed, proceeding offline:', err);
       }
 
-      toast.success('Account created successfully! Please sign in.');
-      navigate('/login');
+      toast.success('User account registered successfully!');
+      navigate('/admin/employees');
     } catch (err) {
       console.error('Registration error:', err);
       toast.error('Registration failed');
@@ -202,9 +202,8 @@ export default function Register() {
           </button>
 
           <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
-            Already registered?{" "}
-            <Link to="/login" className="font-bold text-primary hover:text-orange-600">
-              Sign in
+            <Link to="/admin/employees" className="font-bold text-primary hover:text-orange-600">
+              ← Back to Employees
             </Link>
           </p>
         </form>

@@ -31,7 +31,8 @@ const getCategory = (item) => {
       label === "leave requests" || 
       label === "team members" || 
       label === "apply leave" || 
-      label === "profile") return "PEOPLE & HR";
+      label === "profile" ||
+      label === "register user") return "PEOPLE & HR";
       
   if (label === "purchase orders" || 
       label === "vendors" || 

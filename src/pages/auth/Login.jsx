@@ -119,7 +119,7 @@ export default function Login() {
             </button>
 
             <p className="mt-6 text-center text-xs text-slate-400">
-              Public registration is disabled. Contact your administrator to register.
+              Contact your administrator to register.
             </p>
           </form>
         </section>

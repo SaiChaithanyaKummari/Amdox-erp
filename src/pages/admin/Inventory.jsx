@@ -117,7 +117,7 @@ export default function Inventory() {
               <FiRefreshCw className="h-4 w-4" />
               Sync to DB
             </button>
-            <button onClick={handleAddItem} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">
+            <button onClick={handleAddItem} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600">
               <FiPlus className="h-4 w-4" />
               Add Item
             </button>
@@ -132,8 +132,8 @@ export default function Inventory() {
               <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">Total Items</p>
               <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-slate-100">18,940</p>
             </div>
-            <div className="rounded-xl bg-blue-100 p-3 dark:bg-blue-900/30">
-              <FiPackage className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            <div className="rounded-xl bg-orange-100/60 p-3 dark:bg-blue-900/30">
+              <FiPackage className="h-6 w-6 text-orange-500 dark:text-blue-400" />
             </div>
           </div>
         </div>

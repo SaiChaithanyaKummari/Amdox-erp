@@ -195,7 +195,7 @@ export default function Register() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="erp-focus mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 disabled:opacity-50"
+            className="erp-focus mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600 disabled:opacity-50"
           >
             Create Workspace
             <FiArrowRight className="h-4 w-4" />
@@ -203,7 +203,7 @@ export default function Register() {
 
           <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
             Already registered?{" "}
-            <Link to="/login" className="font-bold text-primary hover:text-blue-700">
+            <Link to="/login" className="font-bold text-primary hover:text-orange-600">
               Sign in
             </Link>
           </p>

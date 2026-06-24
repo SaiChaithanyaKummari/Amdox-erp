@@ -1,7 +1,7 @@
 import { FiTrendingDown, FiTrendingUp } from "react-icons/fi";
 
 const toneClasses = {
-  blue: "bg-blue-50 text-primary ring-blue-100 dark:bg-blue-950/35 dark:text-blue-300 dark:ring-blue-900/60",
+  blue: "bg-orange-50 text-primary ring-blue-100 dark:bg-blue-950/35 dark:text-blue-300 dark:ring-blue-900/60",
   cyan: "bg-cyan-50 text-accent ring-cyan-100 dark:bg-cyan-950/35 dark:text-cyan-300 dark:ring-cyan-900/60",
   emerald:
     "bg-emerald-50 text-success ring-emerald-100 dark:bg-emerald-950/35 dark:text-emerald-300 dark:ring-emerald-900/60",

@@ -28,12 +28,12 @@ export default function AttendanceChart({ data = attendanceOverview }) {
           <AreaChart data={data} margin={{ top: 10, right: 8, left: -16, bottom: 0 }}>
             <defs>
               <linearGradient id="presentFill" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="5%" stopColor="#2563EB" stopOpacity={0.28} />
-                <stop offset="95%" stopColor="#2563EB" stopOpacity={0.02} />
+                <stop offset="5%" stopColor="#a855f7" stopOpacity={0.28} />
+                <stop offset="95%" stopColor="#a855f7" stopOpacity={0.02} />
               </linearGradient>
               <linearGradient id="remoteFill" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="5%" stopColor="#0EA5E9" stopOpacity={0.22} />
-                <stop offset="95%" stopColor="#0EA5E9" stopOpacity={0.02} />
+                <stop offset="5%" stopColor="#06b6d4" stopOpacity={0.22} />
+                <stop offset="95%" stopColor="#06b6d4" stopOpacity={0.02} />
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" vertical={false} />
@@ -51,7 +51,7 @@ export default function AttendanceChart({ data = attendanceOverview }) {
               type="monotone"
               dataKey="present"
               name="Present"
-              stroke="#2563EB"
+              stroke="#a855f7"
               strokeWidth={3}
               fill="url(#presentFill)"
             />
@@ -59,7 +59,7 @@ export default function AttendanceChart({ data = attendanceOverview }) {
               type="monotone"
               dataKey="remote"
               name="Remote"
-              stroke="#0EA5E9"
+              stroke="#06b6d4"
               strokeWidth={3}
               fill="url(#remoteFill)"
             />

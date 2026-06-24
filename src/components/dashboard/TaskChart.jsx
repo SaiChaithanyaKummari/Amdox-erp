@@ -1,7 +1,7 @@
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import { taskCompletion } from "../../data/dashboardData.js";
 
-const colors = ["#22C55E", "#2563EB", "#F59E0B", "#EF4444"];
+const colors = ["#ff7a00", "#a855f7", "#ec4899", "#06b6d4"];
 
 export default function TaskChart({ data = taskCompletion }) {
   return (

@@ -53,7 +53,7 @@ export default function Settings() {
         title="Settings"
         description="Configure system-wide settings and preferences"
         actions={
-          <button onClick={handleSaveChanges} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">
+          <button onClick={handleSaveChanges} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600">
             <FiSave className="h-4 w-4" />
             Save Changes
           </button>
@@ -90,14 +90,14 @@ export default function Settings() {
               
               <div className="flex items-start gap-6">
                 <div className="relative">
-                  <div className="h-24 w-24 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-3xl font-bold text-white overflow-hidden">
+                  <div className="h-24 w-24 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center text-3xl font-bold text-white overflow-hidden">
                     {profileImage ? (
                       <img src={profileImage} alt="Profile" className="h-full w-full object-cover" />
                     ) : (
                       user?.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'
                     )}
                   </div>
-                  <label className="absolute bottom-0 right-0 cursor-pointer rounded-full bg-primary p-2 text-white shadow-lg hover:bg-blue-700">
+                  <label className="absolute bottom-0 right-0 cursor-pointer rounded-full bg-primary p-2 text-white shadow-lg hover:bg-orange-600">
                     <FiCamera className="h-4 w-4" />
                     <input
                       type="file"
@@ -252,7 +252,7 @@ export default function Settings() {
                         </button>
                       </span>
                     </div>
-                    <button className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">
+                    <button className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600">
                       Update Password
                     </button>
                   </div>
@@ -266,7 +266,7 @@ export default function Settings() {
                         <p className="font-medium text-slate-900 dark:text-slate-100">Receive email notifications</p>
                         <p className="text-sm text-slate-500 dark:text-slate-400">Get notified about important updates</p>
                       </div>
-                      <button className="erp-focus h-11 w-16 rounded-xl bg-primary text-sm font-semibold text-white transition hover:bg-blue-700">
+                      <button className="erp-focus h-11 w-16 rounded-xl bg-primary text-sm font-semibold text-white transition hover:bg-orange-600">
                         ON
                       </button>
                     </div>
@@ -385,7 +385,7 @@ export default function Settings() {
                     <p className="font-semibold text-slate-900 dark:text-slate-100">Two-Factor Authentication</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400">Require 2FA for all users</p>
                   </div>
-                  <button className="erp-focus h-11 w-16 rounded-xl bg-primary text-sm font-semibold text-white transition hover:bg-blue-700">
+                  <button className="erp-focus h-11 w-16 rounded-xl bg-primary text-sm font-semibold text-white transition hover:bg-orange-600">
                     ON
                   </button>
                 </div>
@@ -426,7 +426,7 @@ export default function Settings() {
                     <p className="font-semibold text-slate-900 dark:text-slate-100">Email Notifications</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400">Receive updates via email</p>
                   </div>
-                  <button className="erp-focus h-11 w-16 rounded-xl bg-primary text-sm font-semibold text-white transition hover:bg-blue-700">
+                  <button className="erp-focus h-11 w-16 rounded-xl bg-primary text-sm font-semibold text-white transition hover:bg-orange-600">
                     ON
                   </button>
                 </div>
@@ -436,7 +436,7 @@ export default function Settings() {
                     <p className="font-semibold text-slate-900 dark:text-slate-100">In-App Notifications</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400">Show notifications in app</p>
                   </div>
-                  <button className="erp-focus h-11 w-16 rounded-xl bg-primary text-sm font-semibold text-white transition hover:bg-blue-700">
+                  <button className="erp-focus h-11 w-16 rounded-xl bg-primary text-sm font-semibold text-white transition hover:bg-orange-600">
                     ON
                   </button>
                 </div>

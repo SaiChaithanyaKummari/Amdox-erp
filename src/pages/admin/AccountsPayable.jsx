@@ -48,7 +48,7 @@ export default function AccountsPayable() {
     const styles = {
       pending: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
       approved: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
-      paid: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400',
+      paid: 'bg-orange-100/60 text-orange-600 dark:bg-blue-900/30 dark:text-blue-400',
       rejected: 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400'
     };
     return styles[status] || styles.pending;
@@ -61,7 +61,7 @@ export default function AccountsPayable() {
         title="Accounts Payable"
         description="Manage vendor invoices, 3-way matching, and payment runs"
         actions={
-          <button onClick={handleNewInvoice} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">
+          <button onClick={handleNewInvoice} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600">
             <FiPlus className="h-4 w-4" />
             New Invoice
           </button>
@@ -86,8 +86,8 @@ export default function AccountsPayable() {
               <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">Pending Approval</p>
               <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-slate-100">₹3,82,000</p>
             </div>
-            <div className="rounded-xl bg-blue-100 p-3 dark:bg-blue-900/30">
-              <FiClock className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            <div className="rounded-xl bg-orange-100/60 p-3 dark:bg-blue-900/30">
+              <FiClock className="h-6 w-6 text-orange-500 dark:text-blue-400" />
             </div>
           </div>
         </div>

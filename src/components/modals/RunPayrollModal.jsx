@@ -146,9 +146,9 @@ export default function RunPayrollModal({ isOpen, onClose, onSuccess }) {
             </label>
           </div>
 
-          <div className="rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
+          <div className="rounded-lg bg-orange-50 p-4 dark:bg-blue-900/20">
             <div className="flex items-start gap-3">
-              <FiDollarSign className="mt-0.5 h-5 w-5 text-blue-600 dark:text-blue-400" />
+              <FiDollarSign className="mt-0.5 h-5 w-5 text-orange-500 dark:text-blue-400" />
               <div className="text-sm text-blue-800 dark:text-blue-300">
                 <p className="font-semibold">Payroll Summary</p>
                 <p className="mt-1">This will process payroll for all eligible employees in the selected department and period.</p>
@@ -167,7 +167,7 @@ export default function RunPayrollModal({ isOpen, onClose, onSuccess }) {
             <button
               type="submit"
               disabled={loading}
-              className="erp-focus flex-1 h-11 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 disabled:opacity-50"
+              className="erp-focus flex-1 h-11 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600 disabled:opacity-50"
             >
               {loading ? 'Running...' : 'Run Payroll'}
             </button>

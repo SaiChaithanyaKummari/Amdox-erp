@@ -131,7 +131,7 @@ export default function LeaveManagement() {
               <FiRefreshCw className="h-4 w-4" />
               Sync to DB
             </button>
-            <button onClick={handleApplyLeave} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">
+            <button onClick={handleApplyLeave} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600">
               <FiPlus className="h-4 w-4" />
               Apply Leave
             </button>

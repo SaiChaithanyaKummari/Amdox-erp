@@ -14,7 +14,7 @@ export default function NotificationsPanel() {
     const styles = {
       warning: { bg: 'bg-amber-50 dark:bg-amber-900/20', icon: 'text-amber-600 dark:text-amber-400', dot: 'bg-amber-500' },
       success: { bg: 'bg-emerald-50 dark:bg-emerald-900/20', icon: 'text-emerald-600 dark:text-emerald-400', dot: 'bg-emerald-500' },
-      info: { bg: 'bg-blue-50 dark:bg-blue-900/20', icon: 'text-blue-600 dark:text-blue-400', dot: 'bg-blue-500' },
+      info: { bg: 'bg-orange-50 dark:bg-blue-900/20', icon: 'text-orange-500 dark:text-blue-400', dot: 'bg-orange-500' },
       error: { bg: 'bg-rose-50 dark:bg-rose-900/20', icon: 'text-rose-600 dark:text-rose-400', dot: 'bg-rose-500' },
     };
     return styles[type] || styles.info;

@@ -103,7 +103,7 @@ export default function Login() {
               </span>
               {errors.password ? <p className="mt-1 text-xs text-rose-500">{errors.password.message}</p> : null}
               <div className="mt-2 flex justify-end">
-                <Link to="/forgot-password" className="text-sm font-semibold text-primary hover:text-blue-700">
+                <Link to="/forgot-password" className="text-sm font-semibold text-primary hover:text-orange-600">
                   Forgot password?
                 </Link>
               </div>
@@ -112,7 +112,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="erp-focus mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700"
+              className="erp-focus mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600"
             >
               Sign in
               <FiArrowRight className="h-4 w-4" />
@@ -120,7 +120,7 @@ export default function Login() {
 
             <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
               Need an account?{' '}
-              <Link to="/register" className="font-bold text-primary hover:text-blue-700">
+              <Link to="/register" className="font-bold text-primary hover:text-orange-600">
                 Register
               </Link>
             </p>

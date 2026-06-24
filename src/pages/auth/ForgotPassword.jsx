@@ -41,7 +41,7 @@ export default function ForgotPassword() {
           </Link>
 
           <div className="mt-6">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-100/60 text-orange-500 dark:bg-blue-900/30 dark:text-blue-400">
               <FiMail className="h-8 w-8" />
             </div>
             <h1 className="mt-4 text-2xl font-bold text-slate-950 dark:text-white">Forgot password?</h1>
@@ -67,14 +67,14 @@ export default function ForgotPassword() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="erp-focus mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 disabled:opacity-50"
+            className="erp-focus mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600 disabled:opacity-50"
           >
             {isSubmitting ? 'Sending...' : 'Send reset link'}
           </button>
 
           <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
             Remember your password?{" "}
-            <Link to="/login" className="font-bold text-primary hover:text-blue-700">
+            <Link to="/login" className="font-bold text-primary hover:text-orange-600">
               Sign in
             </Link>
           </p>

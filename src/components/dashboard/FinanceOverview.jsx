@@ -34,22 +34,22 @@ export default function FinanceOverview() {
               formatter={(value) => `₹${(value / 100000).toFixed(1)}L`}
             />
             <Legend />
-            <Bar dataKey="revenue" fill="#10b981" name="Revenue" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="expense" fill="#f43f5e" name="Expense" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="revenue" fill="#ff7a00" name="Revenue" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="expense" fill="#ec4899" name="Expense" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
 
       <div className="mt-4 grid grid-cols-2 gap-4">
-        <div className="rounded-lg bg-emerald-50 p-3 dark:bg-emerald-900/20">
-          <p className="text-xs text-emerald-600 dark:text-emerald-400">Total Revenue</p>
-          <p className="mt-1 text-lg font-bold text-emerald-700 dark:text-emerald-300">
+        <div className="rounded-lg bg-orange-50 p-3 dark:bg-orange-950/30">
+          <p className="text-xs text-orange-600 dark:text-orange-400">Total Revenue</p>
+          <p className="mt-1 text-lg font-bold text-orange-700 dark:text-orange-300">
             ₹{(totalRevenue / 100000).toFixed(1)}L
           </p>
         </div>
-        <div className="rounded-lg bg-rose-50 p-3 dark:bg-rose-900/20">
-          <p className="text-xs text-rose-600 dark:text-rose-400">Total Expense</p>
-          <p className="mt-1 text-lg font-bold text-rose-700 dark:text-rose-300">
+        <div className="rounded-lg bg-fuchsia-50 p-3 dark:bg-fuchsia-950/30">
+          <p className="text-xs text-fuchsia-600 dark:text-fuchsia-400">Total Expense</p>
+          <p className="mt-1 text-lg font-bold text-fuchsia-700 dark:text-fuchsia-300">
             ₹{(totalExpense / 100000).toFixed(1)}L
           </p>
         </div>

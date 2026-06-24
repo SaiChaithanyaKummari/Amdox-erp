@@ -63,8 +63,8 @@ export default function Vendors() {
               <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">Total Vendors</p>
               <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-slate-100">84</p>
             </div>
-            <div className="rounded-xl bg-blue-100 p-3 dark:bg-blue-900/30">
-              <FiBriefcase className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            <div className="rounded-xl bg-orange-100/60 p-3 dark:bg-blue-900/30">
+              <FiBriefcase className="h-6 w-6 text-orange-500 dark:text-blue-400" />
             </div>
           </div>
         </div>

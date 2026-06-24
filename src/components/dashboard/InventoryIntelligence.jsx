@@ -29,8 +29,8 @@ export default function InventoryIntelligence() {
                 fontSize: '12px',
               }}
             />
-            <Area type="monotone" dataKey="stock" stroke="#3b82f6" fill="#3b82f6" fillOpacity={0.3} name="Stock" />
-            <Area type="monotone" dataKey="turnover" stroke="#8b5cf6" fill="#8b5cf6" fillOpacity={0.3} name="Turnover" />
+            <Area type="monotone" dataKey="stock" stroke="#ff7a00" fill="#ff7a00" fillOpacity={0.3} name="Stock" />
+            <Area type="monotone" dataKey="turnover" stroke="#ec4899" fill="#ec4899" fillOpacity={0.3} name="Turnover" />
           </AreaChart>
         </ResponsiveContainer>
       </div>

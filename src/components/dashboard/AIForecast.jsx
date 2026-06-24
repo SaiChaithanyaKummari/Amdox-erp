@@ -17,7 +17,7 @@ export default function AIForecast() {
           <h3 className="text-sm font-semibold text-slate-600">AI Forecast</h3>
           <p className="mt-1 text-xs text-slate-400">Next Month Inventory Demand</p>
         </div>
-        <div className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+        <div className="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700 dark:bg-purple-900/30 dark:text-purple-400">
           Confidence: 92%
         </div>
       </header>
@@ -40,19 +40,19 @@ export default function AIForecast() {
             <Line
               type="monotone"
               dataKey="sales"
-              stroke="#3b82f6"
+              stroke="#ff7a00"
               strokeWidth={2}
               name="Actual Sales"
-              dot={{ fill: '#3b82f6', strokeWidth: 2 }}
+              dot={{ fill: '#ff7a00', strokeWidth: 2 }}
             />
             <Line
               type="monotone"
               dataKey="predicted"
-              stroke="#8b5cf6"
+              stroke="#ec4899"
               strokeWidth={2}
               strokeDasharray="5 5"
               name="AI Prediction"
-              dot={{ fill: '#8b5cf6', strokeWidth: 2 }}
+              dot={{ fill: '#ec4899', strokeWidth: 2 }}
             />
           </LineChart>
         </ResponsiveContainer>

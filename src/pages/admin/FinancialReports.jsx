@@ -17,7 +17,7 @@ export default function FinancialReports() {
         title="Financial Reports"
         description="Generate balance sheet, P&L, cash flow, and custom reports"
         actions={
-          <button onClick={handleExportPDF} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">
+          <button onClick={handleExportPDF} className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600">
             <FiDownload className="h-4 w-4" />
             Export PDF
           </button>

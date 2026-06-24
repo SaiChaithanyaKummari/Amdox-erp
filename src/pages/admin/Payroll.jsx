@@ -88,7 +88,7 @@ export default function Payroll() {
   const getStatusBadge = (status) => {
     const styles = {
       draft: 'bg-slate-100 text-slate-700 dark:bg-slate-900/30 dark:text-slate-400',
-      processing: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400',
+      processing: 'bg-orange-100/60 text-orange-600 dark:bg-blue-900/30 dark:text-blue-400',
       completed: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
       failed: 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400'
     };
@@ -109,7 +109,7 @@ export default function Payroll() {
             </button>
             <button 
               onClick={handleRunPayroll}
-              className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700"
+              className="erp-focus inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600"
             >
               <FiPlay className="h-4 w-4" />
               Run Payroll
@@ -136,8 +136,8 @@ export default function Payroll() {
               <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">Employees Paid</p>
               <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-slate-100">1,112</p>
             </div>
-            <div className="rounded-xl bg-blue-100 p-3 dark:bg-blue-900/30">
-              <FiCreditCard className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            <div className="rounded-xl bg-orange-100/60 p-3 dark:bg-blue-900/30">
+              <FiCreditCard className="h-6 w-6 text-orange-500 dark:text-blue-400" />
             </div>
           </div>
         </div>

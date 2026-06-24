@@ -33,10 +33,10 @@ export default function Navbar({ user: propUser, workspace, onOpenSidebar }) {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    if (typeof window === "undefined") return true;
+    if (typeof window === "undefined") return false;
     const storedTheme = window.localStorage.getItem("amdox-theme");
     if (storedTheme) return storedTheme === "dark";
-    return true; // Default to dark mode
+    return false; // Default to light mode
   });
 
   const handleSignOut = () => {
@@ -100,7 +100,7 @@ export default function Navbar({ user: propUser, workspace, onOpenSidebar }) {
   }, [isDarkMode]);
 
   return (
-    <header className="sticky top-0 z-30 border-b border-white/70 bg-white/75 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/75">
+    <header className="sticky top-0 z-30 border-b border-slate-200/50 bg-white/90 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/90">
       <div className="flex min-h-16 items-center gap-3 px-4 sm:px-6 lg:px-8">
         <button
           type="button"
@@ -112,7 +112,7 @@ export default function Navbar({ user: propUser, workspace, onOpenSidebar }) {
         </button>
 
         <div className="hidden min-w-0 flex-col md:flex">
-          <span className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
             Workspace
           </span>
           <span className="truncate text-sm font-semibold text-slate-800 dark:text-slate-100">
@@ -125,7 +125,7 @@ export default function Navbar({ user: propUser, workspace, onOpenSidebar }) {
           <input
             type="search"
             placeholder="Search employees, projects, tasks..."
-            className="erp-focus h-11 w-full rounded-xl border border-slate-200 bg-slate-50/80 pl-10 pr-4 text-sm text-slate-800 transition placeholder:text-slate-400 hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900/80 dark:text-slate-100 dark:hover:border-slate-700"
+            className="erp-focus h-11 w-full rounded-xl border border-slate-200/60 bg-slate-100 pl-10 pr-4 text-sm text-slate-800 transition placeholder:text-slate-400 focus:bg-white dark:border-slate-850 dark:bg-slate-900 dark:text-slate-100"
           />
         </div>
 
@@ -167,7 +167,7 @@ export default function Navbar({ user: propUser, workspace, onOpenSidebar }) {
                       <button
                         key={notification.id}
                         onClick={() => handleNotificationClick(notification)}
-                        className={`flex w-full gap-3 border-b border-slate-100 px-4 py-3 text-left transition hover:bg-slate-50 dark:border-slate-800 dark:hover:bg-slate-800 ${notification.unread ? 'bg-blue-50/50 dark:bg-blue-900/10' : ''}`}
+                        className={`flex w-full gap-3 border-b border-slate-100 px-4 py-3 text-left transition hover:bg-slate-50 dark:border-slate-800 dark:hover:bg-slate-800 ${notification.unread ? 'bg-orange-50/50 dark:bg-blue-900/10' : ''}`}
                       >
                         <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${notification.unread ? 'bg-primary text-white' : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300'}`}>
                           <Icon className="h-4 w-4" />
@@ -191,7 +191,7 @@ export default function Navbar({ user: propUser, workspace, onOpenSidebar }) {
                   })}
                 </div>
                 <div className="border-t border-slate-100 px-4 py-2 dark:border-slate-800">
-                  <button className="w-full rounded-lg px-3 py-2 text-center text-sm font-semibold text-primary transition hover:bg-blue-50 dark:hover:bg-blue-900/20">
+                  <button className="w-full rounded-lg px-3 py-2 text-center text-sm font-semibold text-primary transition hover:bg-orange-50 dark:hover:bg-blue-900/20">
                     Mark All as Read
                   </button>
                 </div>

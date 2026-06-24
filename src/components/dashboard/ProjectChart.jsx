@@ -37,7 +37,7 @@ export default function ProjectChart({ data = projectProgress }) {
                 boxShadow: "0 12px 32px -24px rgba(15, 23, 42, 0.5)",
               }}
             />
-            <Bar dataKey="progress" name="Progress" radius={[8, 8, 0, 0]} fill="#2563EB" />
+            <Bar dataKey="progress" name="Progress" radius={[8, 8, 0, 0]} fill="#ff7a00" />
           </BarChart>
         </ResponsiveContainer>
       </div>

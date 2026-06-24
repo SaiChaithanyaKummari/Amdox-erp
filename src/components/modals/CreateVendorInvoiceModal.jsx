@@ -146,7 +146,7 @@ export default function CreateVendorInvoiceModal({ isOpen, onClose, onSuccess })
               <button
                 type="button"
                 onClick={addItem}
-                className="erp-focus inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                className="erp-focus inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold text-primary hover:bg-orange-50 dark:hover:bg-blue-900/20"
               >
                 <FiPlus className="h-3 w-3" />
                 Add Item
@@ -227,7 +227,7 @@ export default function CreateVendorInvoiceModal({ isOpen, onClose, onSuccess })
             <button
               type="submit"
               disabled={loading}
-              className="erp-focus h-11 rounded-xl bg-primary px-6 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 disabled:opacity-50"
+              className="erp-focus h-11 rounded-xl bg-primary px-6 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600 disabled:opacity-50"
             >
               {loading ? 'Creating...' : 'Create Invoice'}
             </button>

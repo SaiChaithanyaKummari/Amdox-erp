@@ -1,6 +1,6 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
-const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
+const COLORS = ['#ff7a00', '#a855f7', '#ec4899', '#06b6d4', '#10b981'];
 
 export default function EmployeeAnalytics() {
   const data = [
@@ -54,9 +54,9 @@ export default function EmployeeAnalytics() {
       </div>
 
       <div className="mt-4">
-        <div className="flex items-center justify-between rounded-lg bg-blue-50 p-3 dark:bg-blue-900/20">
-          <p className="text-xs text-blue-600 dark:text-blue-400">Total Employees</p>
-          <p className="text-lg font-bold text-blue-700 dark:text-blue-300">{totalEmployees}</p>
+        <div className="flex items-center justify-between rounded-lg bg-orange-50 p-3 dark:bg-blue-900/20">
+          <p className="text-xs text-orange-500 dark:text-blue-400">Total Employees</p>
+          <p className="text-lg font-bold text-orange-600 dark:text-blue-300">{totalEmployees}</p>
         </div>
       </div>
     </article>
